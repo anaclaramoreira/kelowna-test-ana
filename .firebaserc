@@ -5,11 +5,14 @@
   "targets": {
     "testingkelowna-a9dbc": {
       "hosting": {
+        "staging": [
+          "testingkelowna-a9dbc"
+        ],
         "production": [
           "kelowna-production-79"
         ]
       }
     }
-  },
-  "etags": {}
+  }
 }
+
