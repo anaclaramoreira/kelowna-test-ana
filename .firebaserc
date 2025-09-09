@@ -5,13 +5,13 @@
     "production": "devops-staging-29869"
   },
   "targets": {
-    "testingkelowna-a9dbc": {
+    "devops-test-c54ed": {
       "hosting": {
         "staging": [
-          "testingkelowna-a9dbc"
+          "devops-test-c54ed"
         ],
         "production": [
-          "kelowna-production-79"
+          "devops-staging-29869"
         ]
       }
     }
