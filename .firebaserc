@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "testingkelowna-a9dbc"
+  },
+  "targets": {
+    "testingkelowna-a9dbc": {
+      "hosting": {
+        "production": [
+          "kelowna-production-79"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
