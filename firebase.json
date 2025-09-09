@@ -1,6 +1,6 @@
 {
   "hosting": {
-    "public": "kelowna-test-ana",
+    "public": ".",
     "ignore": [
       "firebase.json",
       "**/.*",
