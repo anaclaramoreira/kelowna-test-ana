@@ -1,8 +1,8 @@
 {
   "projects": {
     "default": "devops-staging-29869",
-    "staging": "devops-staging-29869",
-    "production": "devops-prod-3ea0c"
+    "staging": "devops-test-c54ed",
+    "production": "devops-staging-29869"
   },
   "targets": {
     "testingkelowna-a9dbc": {
@@ -18,7 +18,7 @@
   },
   "etags": {},
   "aliases": {
-    "staging": "testingkelowna-a9dbc",
-    "production": "kelowna-production-79"
+    "staging": "devops-test-c54ed",
+    "production": "devops-staging-29869"
   }
 }
