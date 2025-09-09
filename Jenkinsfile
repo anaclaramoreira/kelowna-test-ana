@@ -1,6 +1,10 @@
 pipeline {
     agent any
     
+    environment {
+        FIREBASE_TOKEN = credentials('firebase-token')
+    }
+    
     stages {
         stage('Build') {
             steps {
@@ -26,8 +30,8 @@ pipeline {
         stage('Production') {
             steps {
                 echo 'Deploying to production...'
-                sh 'firebase use production'
-                sh 'firebase deploy --only hosting:production'
+                sh 'firebase use production --token $FIREBASE_TOKEN'
+                sh 'firebase deploy --only hosting:production --token $FIREBASE_TOKEN'
                 echo 'Production deployment completed!'
             }
         }
