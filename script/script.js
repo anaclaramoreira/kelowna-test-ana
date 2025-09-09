@@ -151,9 +151,26 @@ function AddGroupMember(lastName, firstName) {
 * 
 */
 function RemoveGroupMember() {
-
-	throw "ERROR! You must work in this function before to send to Staging Environment!";
-
+if (membersLst.options.length === 0) {
+        throw "There are no group members to delete!";
+        return;
+    }
+    
+    if (membersLst.selectedIndex === -1) {
+        throw "Please select a group member to delete!";
+        return;
+    }
+   
+    let selectedIndex = membersLst.selectedIndex;
+    membersLst.remove(selectedIndex);
+    
+    groupSize.value = membersLst.options.length;
+    
+    if (membersLst.options.length > 0) {
+        CalcGroupDiscount(membersLst.options.length);
+    } else {
+        discRate.value = DAILYRATE.toFixed(2);
+    }
 }
 
 /*
