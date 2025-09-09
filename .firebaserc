@@ -1,8 +1,8 @@
 {
   "projects": {
-    "default": "devops-prod-3ea0c",
-    "production": "devops-prod-3ea0c",
-    "staging": "devops-staging-29869"
+    "default": "devops-staging-29869",
+    "staging": "devops-staging-29869",
+    "production": "devops-prod-3ea0c"
   },
   "targets": {
     "testingkelowna-a9dbc": {
